@@ -1,0 +1,81 @@
+
+.header_container{
+    display: flex;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+    background-color: black;
+    flex-direction: row;
+    position: relative;
+    size: 100vh !important;
+}
+
+.header_container h1{ 
+    margin: 5px;
+    padding-left: 1px;
+    color: white;
+}
+.p{
+    display: flex;
+}
+.container_img img{
+    
+    width: 50%;
+    border-radius: 30px;
+
+  
+}
+.button_header{
+margin: 8px;
+gap: 2px;
+display: flex;
+flex-direction: row;
+text-decoration:none;
+font-weight:10px;
+font-size:12px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:10px;
+padding-right:10px;
+background-color:transparent;
+color: white;   
+}
+
+.button_header:hover{
+   
+    font-size: 13px;
+    box-shadow: 2px;
+    background-color: lightblue;
+    border-color: white;
+    border-radius: 50px;
+    border-width: 1px ;
+
+}
+.link_header{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 767px) {
+    .header_container {
+      flex-direction: column; /* Cambia la dirección del flujo en móviles */
+      align-items: center; /* Centra los elementos en móviles */
+      font-size: small; /* Puedes ajustar el tamaño de fuente en móviles */
+      size: auto !important; /* Elimina el tamaño fijo de altura en móviles */
+    }
+  
+    .container_img img {
+      width: 100%; /* Ajusta el ancho de la imagen en móviles */
+    }
+  
+    .link_header {
+      gap: 10px; /* Reduce el espacio entre los enlaces en móviles */
+    }
+  
+    .button_header {
+      font-size: 12px; /* Ajusta el tamaño de fuente de los botones en móviles */
+      padding: 5px 10px; /* Ajusta el relleno de los botones en móviles */
+    }
+  }

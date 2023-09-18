@@ -1,0 +1,39 @@
+.cortinas_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.img_c{
+    gap: 10px;
+    margin: 10px;
+    width: 90%;
+    height: 70%;
+}
+
+.h1_b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+    .cortinas_container {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center;
+    }
+
+    .img_c {
+        width: 100%; /* Ocupa el 100% del ancho del contenedor */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+   
+}
+
+
+
+
+
